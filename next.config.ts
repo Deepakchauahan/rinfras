@@ -8,12 +8,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Add these two blocks to bypass strict local errors breaking the pipeline
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
+  // Add this env block below:
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/rinfras" : "",
   },
 };
 

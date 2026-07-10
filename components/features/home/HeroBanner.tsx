@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HeroBanner() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <section className="relative w-full bg-white overflow-hidden py-16 lg:py-24">
       {/* Structural Centered Layout Container */}
@@ -74,7 +75,7 @@ export default function HeroBanner() {
           {/* High Performance Image Element Linked via Public Root Directory */}
           <div className="relative w-full aspect-[4/3] sm:aspect-square lg:aspect-[4/3]">
             <Image
-              src="/banner1.png"
+            src={`${basePath}/banner1.png`} 
               alt="Enterprise Cyber Security and Network Infrastructure Abstract Diagram Illustration"
               fill
               // Re-enabled optimized sizes fallback to scale resolution on smaller mobile devices
