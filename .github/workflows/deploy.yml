@@ -2,7 +2,7 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["main"] # Triggers every time you push code to main
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    runs-rate: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,7 +24,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ max(steps.detect-package-manager.outputs.manager, 'npm') }}
 
       - name: Install dependencies
         run: npm ci
@@ -35,7 +34,7 @@ jobs:
       - name: Upload production artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out # Uploads your newly updated UI code folder
+          path: ./out
 
   deploy:
     environment:
