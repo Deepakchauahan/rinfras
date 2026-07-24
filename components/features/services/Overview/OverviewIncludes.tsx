@@ -3,7 +3,7 @@ import FAQ from "./FAQ";
 import WhyAndHow from "./WhyAndHow";
 
 
-export default function Includes() {
+export default function OverviewIncludes() {
     const steps = [
         {
             icon: (

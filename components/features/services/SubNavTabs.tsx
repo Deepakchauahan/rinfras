@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import CloudConsulting from './cloud/CloudConsulting';
 import IntegratedCom from './ICN/IntegratedCom';
-import Includes from './overview/Includes';
+import OverviewIncludes from './overview/OverviewIncludes';
 
 export default function SubNavTabs() {
     const tabs = [
@@ -45,7 +45,7 @@ export default function SubNavTabs() {
     const renderTabData = () => {
         switch (activeTab) {
             case "overview":
-                return <Includes />
+                return <OverviewIncludes />
             case "cloud":
                 return <CloudConsulting />
             case "icn":
