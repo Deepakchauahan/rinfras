@@ -4,11 +4,10 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? "/rinfras" : "",
+  basePath: isProd ? "/rinfras" : undefined, // Uses undefined instead of empty string
   images: {
-    unoptimized: true,
+    unoptimized: true, // Prevents export build failure
   },
-  // Add this env block below:
   env: {
     NEXT_PUBLIC_BASE_PATH: isProd ? "/rinfras" : "",
   },
