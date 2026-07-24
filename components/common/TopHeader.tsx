@@ -11,9 +11,9 @@ export default function TopHeader() {
     ];
 
     return (
-        <header className="w-full bg-white border-b border-[#E7E8EC] sticky top-0 z-50 transition-colors duration-200">
+         <header className="w-full border-b border-[#E7E8EC] bg-white/50 backdrop-blur-[5px] fixed top-0 z-50 transition-all duration-200">
             {/* Height locked explicitly at h-[90px] to preserve browser thread pixels for 100% Core Web Vitals (CLS) score */}
-            <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 h-[90px] flex items-center justify-between">
+            <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 h-[90px] flex items-center justify-between">
 
                 {/* Logo Section */}
                 <div className="flex-shrink-0">
@@ -32,7 +32,7 @@ export default function TopHeader() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium text-gray-600 hover:text-[#098bab] transition-colors duration-150 relative py-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#098bab] hover:after:w-full after:transition-all after:duration-200"
+                            className="text-sm font-medium text-gray-600 hover:text-[#098bab] transition-colors duration-150 relative py-2"
                         >
                             {link.name}
                         </Link>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TopHeader from "@/components/common/TopHeader";
+import Footer from "@/components/common/Footer";
 
 // Optimizing Google Inter Font for Core Web Vitals
 const inter = Inter({
@@ -34,6 +35,7 @@ export default function RootLayout({
         <main className="flex-1 w-full">
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

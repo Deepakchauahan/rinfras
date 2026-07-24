@@ -19,12 +19,12 @@ export default function TechPartners() {
     ];
 
     return (
-        <section className="w-full bg-[#f8fafc] border-y border-gray-100 py-10 overflow-hidden">
+        <section className="w-full bg-[#F7F7F7] border-y border-gray-100 py-5 overflow-hidden">
             <div className="max-w-[1520px] mx-auto px-4 sm:px-6">
 
                 {/* Section Header */}
                 <div className="mb-8">
-                    <p className="text-[20px] font-bold text-[#6B7280] tracking-widest">
+                    <p className="text-[20px] font-bold text-[#6B7280]">
                         Our Technology Partners
                     </p>
                 </div>

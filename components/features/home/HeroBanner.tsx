@@ -3,10 +3,16 @@ import Link from 'next/link';
 
 export default function HeroBanner() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   return (
-    <section className="relative w-full bg-white overflow-hidden py-16 lg:py-24">
+    <section className="relative w-full bg-white overflow-hidden py-16 lg:py-24 pt-[154px] lg:pt-[186px]"
+      style={{
+        backgroundImage: `url('${basePath}/banner-bg.png')`,
+        backgroundSize: '100%',
+        backgroundRepeat: 'no-repeat'
+      }} >
       {/* Structural Centered Layout Container */}
-      <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
         {/* Left Column: Typography & Conversion Elements (7/12 Width) */}
         <div className="lg:col-span-7 flex flex-col items-start space-y-6 z-10">
@@ -75,7 +81,7 @@ export default function HeroBanner() {
           {/* High Performance Image Element Linked via Public Root Directory */}
           <div className="relative w-full aspect-[4/3] sm:aspect-square lg:aspect-[4/3]">
             <Image
-            src={`${basePath}/banner1.png`} 
+              src={`${basePath}/banner1.png`}
               alt="Enterprise Cyber Security and Network Infrastructure Abstract Diagram Illustration"
               fill
               // Re-enabled optimized sizes fallback to scale resolution on smaller mobile devices
