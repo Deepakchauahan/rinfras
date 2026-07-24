@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Includes from './overview/Includeds';
 import CloudConsulting from './cloud/CloudConsulting';
 import IntegratedCom from './ICN/IntegratedCom';
+import Includes from './overview/Includes';
 
 export default function SubNavTabs() {
     const tabs = [
@@ -48,7 +48,7 @@ export default function SubNavTabs() {
                 return <Includes />
             case "cloud":
                 return <CloudConsulting />
-                case "icn":
+            case "icn":
                 return <IntegratedCom />
             default:
                 return <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20 py-8 text-gray-400">No data found</div>;
