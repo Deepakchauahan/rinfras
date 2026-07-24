@@ -59,44 +59,45 @@ export default function Includes() {
 
     ];
 
-    return (<>
-        <section className="w-full bg-white py-16 lg:py-20 ">
-            <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20 text-left">
-                <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-black text-[#283860] mb-5">
-                    What's Included?
-                </h2>
+    return (
+        <>
+            <section className="w-full bg-white py-16 lg:py-20 ">
+                <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20 text-left">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-black text-[#283860] mb-5">
+                        What's Included?
+                    </h2>
 
-                {/* 3-Step Process Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mt-3 lg:mt-5 text-left">
-                    {steps.map((step) => (
-                        <div
-                            key={step.title}
-                            className="bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow duration-200"
-                        >
-                            <div>
-                                {/* Card Top Flex Line */}
-                                <div className="flex justify-between items-center mb-6">
-                                    <div className="w-12 h-12 bg-[#CFFAFE] rounded-xl flex items-center justify-center">
-                                        {step.icon}
+                    {/* 3-Step Process Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mt-3 lg:mt-5 text-left">
+                        {steps.map((step) => (
+                            <div
+                                key={step.title}
+                                className="bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow duration-200"
+                            >
+                                <div>
+                                    {/* Card Top Flex Line */}
+                                    <div className="flex justify-between items-center mb-6">
+                                        <div className="w-12 h-12 bg-[#CFFAFE] rounded-xl flex items-center justify-center">
+                                            {step.icon}
+                                        </div>
                                     </div>
+
+                                    {/* Typography Stack */}
+                                    <h3 className="text-[20px] font-semibold text-[#283860]  mb-3">
+                                        {step.title}
+                                    </h3>
+                                    <p className="text-[#23262E] leading-relaxed font-normal">
+                                        {step.description}
+                                    </p>
                                 </div>
-
-                                {/* Typography Stack */}
-                                <h3 className="text-[20px] font-semibold text-[#283860]  mb-3">
-                                    {step.title}
-                                </h3>
-                                <p className="text-[#23262E] leading-relaxed font-normal">
-                                    {step.description}
-                                </p>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
 
-            </div>
-        </section>
-        <WhyAndHow />
-        <FAQ />
-    </>
+                </div>
+            </section>
+            <WhyAndHow />
+            <FAQ />
+        </>
     );
 }
