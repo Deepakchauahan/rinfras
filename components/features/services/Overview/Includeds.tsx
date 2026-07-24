@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import FAQ from './FAQ';
-import WhyAndHow from './WhyAndHow';
+import FAQ from "./FAQ";
+import WhyAndHow from "./WhyAndHow";
+
 
 export default function Includes() {
     const steps = [

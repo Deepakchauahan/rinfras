@@ -38,10 +38,9 @@ export default function TopHeader() {
                                 key={link.name}
                                 href={link.href}
                                 className={`text-sm font-medium transition-all duration-150 relative py-2 block ${isActive
-                                    ? 'text-[#098bab] font-bold'
+                                    ? 'text-[#098bab]'
                                     : 'hover:text-[#098bab]'
                                     }`}
-                            // className="text-sm font-medium text-gray-600 hover:text-[#098bab] transition-colors duration-150 relative py-2"
                             >
                                 {link.name}
                             </Link>
