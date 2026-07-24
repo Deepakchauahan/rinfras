@@ -41,16 +41,16 @@
 } */
 
 /* Liquid expands diagonally to the top right on hover */
-.btn-premium-anim:hover::before {
+/* .btn-premium-anim:hover::before {
   transform: translate3d(0, -95%, 0) rotate(15deg) scaleY(1.3);
-}
+} */
 
 /* Handles style updates smoothly when hovered */
-.btn-premium-anim:hover {
+/* .btn-premium-anim:hover {
   color: #ffffff !important;
   border-color: #035A70 !important;
-  background-color: #035A70; /* Smooth fallback sync */
-}
+  background-color: #035A70; 
+} */
 
 
 /* ==========================================================================

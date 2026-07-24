@@ -5,7 +5,7 @@ export default function HeroBanner() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
-    <section className="relative w-full bg-white overflow-hidden py-16 lg:py-24 pt-[154px] lg:pt-[186px]"
+    <section className="relative w-full bg-white overflow-hidden py-16 lg:py-20 pt-[154px] lg:pt-[186px]"
       style={{
         backgroundImage: `url('${basePath}/banner-bg.png')`,
         backgroundSize: '100%',
@@ -25,7 +25,7 @@ export default function HeroBanner() {
           </div>
 
           {/* Main Hero Header Stack */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#283860] tracking-tight leading-[1.2] max-w-[766px]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#283860]  leading-[1.2] max-w-[766px]">
             Enterprise IT & Cyber Security. <br />Proven at Scale.
           </h1>
 

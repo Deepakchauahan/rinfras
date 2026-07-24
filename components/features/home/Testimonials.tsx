@@ -4,7 +4,7 @@ export default function Testimonials() {
       initials: 'KS',
       name: 'KETAN SHARMA',
       company: 'Allerton Australia',
-      text: 'Our experience with Rinfras has been really great. A great team, pro-active in their response time and always available on call to get your server related troubles solved. Thanks team Rinfras.'
+      text: 'Our experience with Rinfras has been really great. A great team, pro -active in their response time and always available on call to get your server related troubles solved. Thanks team Rinfras.'
     },
     {
       initials: 'CS',
@@ -21,35 +21,53 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="w-full bg-[#FAFBFC] py-16 lg:py-24 border-b border-[#E7E8EC]">
-      <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20 text-center">
-        
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#283860] tracking-tight mb-12 lg:mb-16">
+    <section className="w-full bg-white py-16 lg:py-20 ">
+      <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20 ">
+
+        <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-black text-[#283860] mb-5">
           What Our Clients Are Saying
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 text-left items-start">
+        {/* Dynamic Card Display Layout Matrix */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mt-3 lg:mt-5 text-left">
           {reviews.map((review, idx) => (
-            <div key={idx} className="bg-white border border-[#E7E8EC] rounded-xl p-8 shadow-sm flex flex-col justify-between min-h-[280px]">
-              {/* Quote Copy Area Layout */}
-              <p className="text-sm text-[#6B7280] leading-relaxed font-normal mb-8 relative">
-                "{review.text}"
-              </p>
+            <div
+              key={idx}
+              className="bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow duration-200"
+            >
 
-              {/* Author Identity Badge Layout Footer Row */}
-              <div className="flex items-center gap-3 pt-4 border-t border-[#FAFBFC]">
-                <div className="w-10 h-10 rounded-lg bg-[#CFFAFE] border border-[#0891B2]/20 flex items-center justify-center text-sm font-black text-[#0891B2]">
-                  {review.initials}
+              {/* Text Layer Block Frame Container */}
+              <div className="relative mb-12 z-10">
+                {/* Decorative Left/Open Vector Quote Mask */}
+                <span className="absolute -top-2 -left-5 text-[50px] font-bold text-[#CFFAFE] select-none inline leading-none z-[-1]">“</span>
+
+                <p className="text-[#23262E] font-normal leading-relaxed inline">
+                  {review.text}<span className="inline text-[50px] font-bold text-[#CFFAFE] select-none -ml-2 translate-y-2 absolute -bottom-9">”</span>
+                </p>
+              </div>
+
+              {/* Author Identity Metadata Layout Footer Row */}
+              <div className="flex items-center gap-4 relative z-10">
+
+                {/* Custom Stylized Monogram Graphic Layout Block Box */}
+                <div className="relative flex-shrink-0 w-16 h-12 flex items-center select-none z-[-1]">
+                  <span className="text-[56px] font-black tracking-tighter text-[#CFFAFE] absolute left-0 bottom-0 leading-none">
+                    {review.initials}
+                  </span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-xs font-black text-[#283860] tracking-wider uppercase">
+
+                {/* Text Identity Matrix */}
+                <div className="flex flex-col justify-center -ml-4">
+                  <span className="text-[20px] font-semibold text-[#283860] uppercase leading-none">
                     {review.name}
                   </span>
-                  <span className="text-[11px] font-medium text-[#6B7280]">
+                  <span className="text-[14px] font-medium text-[#6B7280] mt-0.5">
                     {review.company}
                   </span>
                 </div>
+
               </div>
+
             </div>
           ))}
         </div>
