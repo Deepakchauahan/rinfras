@@ -19,7 +19,7 @@ export default function TechPartners() {
     ];
 
     return (
-        <section className="w-full bg-[#F7F7F7] border-y border-gray-100 py-5 overflow-hidden">
+        <section className="w-full bg-[#F7F7F7] border-y border-gray-100 py-7 overflow-hidden">
             <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20">
 
                 {/* Section Header */}

@@ -18,7 +18,7 @@ export default function HeroBanner() {
         <div className="lg:col-span-7 flex flex-col items-start space-y-6 z-10">
 
           {/* Trust Badge Indicator */}
-          <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-[#CFFAFE] border-2 border-[#0F52BA] transition-transform duration-300 hover:scale-102">
+          <div className="inline-flex items-center px-5 py-2.5 rounded-[16px] bg-[#CFFAFE] border-2 border-[#0F52BA] transition-transform duration-300 hover:scale-102">
             <span className="text-sm font-semibold text-[#0F52BA] tracking-wide">
               Trusted by Australians for over 14 years
             </span>

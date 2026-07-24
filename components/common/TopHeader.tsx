@@ -12,7 +12,6 @@ export default function TopHeader() {
 
     return (
          <header className="w-full border-b border-[#E7E8EC] bg-white/80 backdrop-blur-[5px] fixed top-0 z-50 transition-all duration-200">
-            {/* Height locked explicitly at h-[90px] to preserve browser thread pixels for 100% Core Web Vitals (CLS) score */}
             <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 h-[90px] flex items-center justify-between">
 
                 {/* Logo Section */}

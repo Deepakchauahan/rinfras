@@ -26,20 +26,19 @@
 }
 
 /* The liquid diagonal background wave shape */
-.btn-premium-anim::before {
+/* .btn-premium-anim::before {
   content: '';
   position: absolute;
   top: 100%;
   left: -10%;
   width: 120%;
   height: 350%;
-  /* UPDATED: Deep rich dark cyan for crisp, high-visibility contrast */
   background-color: #035A70;
   border-radius: 40%;
   z-index: -1;
   transform: translate3d(0, 0, 0) scaleY(1) skewY(-15deg);
   transition: transform 0.65s cubic-bezier(0.25, 1, 0.3, 1);
-}
+} */
 
 /* Liquid expands diagonally to the top right on hover */
 .btn-premium-anim:hover::before {
