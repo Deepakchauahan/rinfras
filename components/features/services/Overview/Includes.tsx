@@ -1,3 +1,4 @@
+"use client"
 import FAQ from "./FAQ";
 import WhyAndHow from "./WhyAndHow";
 
