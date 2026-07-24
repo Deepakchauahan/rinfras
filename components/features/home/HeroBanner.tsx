@@ -74,20 +74,15 @@ export default function HeroBanner() {
 
           {/* Decorative Background Dots Component (Pure CSS - Zero Image Load Weight) */}
           <div
-            className="absolute -top-4 -right-4 w-32 h-32 opacity-20 pointer-events-none hidden sm:block bg-[radial-gradient(#00c2ff_1.5px,transparent_1.5px)] [background-size:12px_12px]"
+            className="absolute -top-4 right-6 w-32 h-32 opacity-20 pointer-events-none hidden sm:block bg-[radial-gradient(#00c2ff_1.5px,transparent_1.5px)] [background-size:12px_12px]"
             aria-hidden="true"
           />
 
           {/* High Performance Image Element Linked via Public Root Directory */}
-          <div className="relative w-full aspect-[4/3] sm:aspect-square lg:aspect-[4/3]">
-            <Image
+          <div className="relative w-full">
+            <img
               src={`${basePath}/banner1.png`}
-              alt="Enterprise Cyber Security and Network Infrastructure Abstract Diagram Illustration"
-              fill
-              // Re-enabled optimized sizes fallback to scale resolution on smaller mobile devices
-              sizes="(max-w: 768px) 100vw, (max-w: 1200px) 40vw, 600px"
-              priority={true}
-              quality={90}
+              alt="Enterprise Cyber Security and Network Infrastructure Abstract Diagram Illustration"              
               className="object-contain"
             />
           </div>

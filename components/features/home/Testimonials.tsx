@@ -21,7 +21,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="w-full bg-white py-16 lg:py-20 ">
+    <section className="w-full bg-[#F7F7F7] py-16 lg:py-20 ">
       <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-20 ">
 
         <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-black text-[#283860] mb-5">
